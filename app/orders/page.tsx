@@ -46,6 +46,7 @@ export default function OrdersPage() {
               order.variant.type.toUpperCase() as keyof typeof IMAGE_VARIANTS
             ].dimensions;
 
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           const product = order.productId as any;
 
           return (
